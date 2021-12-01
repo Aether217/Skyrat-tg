@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;pai - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/controller/subsystem/pai.html#proc">Proc Details</a></header>
+<main>
+<h1>pai <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/pai.html">pai</a></aside>
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L1">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/check_candidate">check_candidate</a></th><td>The matching candidate from search
+Finds the candidate in question from the list of candidates.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/check_ready">check_ready</a></th><td>Checks if a candidate is ready so that they may be displayed in the pAI
+card's candidate window</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/findPAI">findPAI</a></th><td>Pings ghosts to announce that someone is requesting a pAI</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/recruitWindow">recruitWindow</a></th><td>This is the primary window proc when the pAI candidate
+hud menu is pressed by observers.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/submit_alert">submit_alert</a></th><td>Finds a matching candidate.
+Pings all pAI cards on the station that new candidates are available.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/ui_act">ui_act</a></th><td>The matching candidate from search
+Actions sent by TGUI</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/ui_interact">ui_interact</a></th><td>Opens the TGUI window</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/ui_state">ui_state</a></th><td>Searches for a previous candidate upon opening the menu
+Ensures an observer has the window open</td></tr>
+            <tr><th><a href="datum/controller/subsystem/pai.html#proc/ui_static_data">ui_static_data</a></th><td>The data sent to the window.</td></tr></table><h2 id="proc">Proc Details</h2><h3 id="proc/check_candidate"><aside class="declaration">proc </aside>check_candidate<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L119">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 119"/></a></aside>
+        </h3>
+        <p>The matching candidate from search
+Finds the candidate in question from the list of candidates.</p><h3 id="proc/check_ready"><aside class="declaration">proc </aside>check_ready<aside>(/<a href="datum.html">datum</a>/pai_candidate/candidate) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L153">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 153"/></a></aside>
+        </h3>
+        <p>Checks if a candidate is ready so that they may be displayed in the pAI
+card's candidate window</p><h3 id="proc/findPAI"><aside class="declaration">proc </aside>findPAI<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/paicard.html">paicard</a>/pai, /<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 25"/></a></aside>
+        </h3>
+        <p>Pings ghosts to announce that someone is requesting a pAI</p>
+<p>Arguments
+@pai - The card requesting assistance
+@user - The player requesting a pAI</p><h3 id="proc/recruitWindow"><aside class="declaration">proc </aside>recruitWindow<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L47">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 47"/></a></aside>
+        </h3>
+        <p>This is the primary window proc when the pAI candidate
+hud menu is pressed by observers.</p>
+<p>Arguments
+@user - The ghost doing the pressing.</p><h3 id="proc/submit_alert"><aside class="declaration">proc </aside>submit_alert<aside>() 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L131">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 131"/></a></aside>
+        </h3>
+        <p>Finds a matching candidate.
+Pings all pAI cards on the station that new candidates are available.</p><h3 id="proc/ui_act"><aside class="parent"><a title="/datum" href="datum.html#proc/ui_act">&uarr;</a></aside>ui_act<aside>(action, /list/params, /<a href="datum.html">datum</a>/<a href="datum/tgui.html">tgui</a>/ui) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L82">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 82"/></a></aside>
+        </h3>
+        <p>The matching candidate from search
+Actions sent by TGUI</p><h3 id="proc/ui_interact"><aside class="parent"><a title="/datum" href="datum.html#proc/ui_interact">&uarr;</a></aside>ui_interact<aside>(/<a href="mob.html">mob</a>/user, /<a href="datum.html">datum</a>/<a href="datum/tgui.html">tgui</a>/ui) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L61">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 61"/></a></aside>
+        </h3>
+        <p>Opens the TGUI window</p><h3 id="proc/ui_state"><aside class="parent"><a title="/datum" href="datum.html#proc/ui_state">&uarr;</a></aside>ui_state<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L57">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 57"/></a></aside>
+        </h3>
+        <p>Searches for a previous candidate upon opening the menu
+Ensures an observer has the window open</p><h3 id="proc/ui_static_data"><aside class="parent"><a title="/datum" href="datum.html#proc/ui_static_data">&uarr;</a></aside>ui_static_data<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/Skyrat-SS13/Skyrat-tg/blob/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2/code/controllers/subsystem/pai.dm#L69">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;pai.dm 69"/></a></aside>
+        </h3>
+        <p>The data sent to the window.</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Skyrat-SS13/Skyrat-tg/tree/73dff88937ab621de4ce48bb8ef8aa65d2b5e0f2">73dff88</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
